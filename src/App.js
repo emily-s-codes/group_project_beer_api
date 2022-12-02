@@ -5,14 +5,14 @@ import Detail from './pages/detail/Detail';
 import Homepage from './pages/homepage/Homepage';
 import Uebersicht from './pages/uebersicht/Uebersicht';
 
-function App() {
+function App(props) {
   return (
     <div className="App">
       <Router>
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/uebersicht" element={<Uebersicht />} />
-          <Route path="/detail/:beerName" element={<Detail />} />
+          <Route path={`/detail/:beerId`} element={<Detail />} />
         </Routes>
       </Router>
     </div>

@@ -1,24 +1,13 @@
 import "./Homepage.css"
-import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Homepage = () => {
-    const [beerList, setBeerList] = useState([]);
-
-    useEffect(() => {
-        fetch(`https://ih-beers-api2.herokuapp.com/beers`)
-            .then(res => res.json())
-            .then((beerList) => {
-                setBeerList(beerList)
-            })
-    }, []);
-    console.log(beerList)
-
     return (
         <div className="homepageDiv">
             <section className="homepageSubSection">
                 <div className="homepageImgBanner">
                     <img src="https://unsplash.it/800?1" alt="random" />
-                    <h2>All Beers</h2>
+                    <Link to={`/uebersicht`}><h2>All Beers</h2></Link>
                     <p className="homepageP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, a, eleifend vitae varius venenatis.</p>
                 </div>
                 <div className="homepageImgBanner">

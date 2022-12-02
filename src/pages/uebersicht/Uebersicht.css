@@ -1,0 +1,8 @@
+.singleBeerDiv {
+    display: flex;
+    padding: 10px;
+}
+
+.singleBeerDiv img {
+    height: 100px;
+}
