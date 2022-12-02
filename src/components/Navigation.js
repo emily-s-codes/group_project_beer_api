@@ -4,9 +4,11 @@ import { Link } from "react-router-dom";
 
 const Navigation = () => {
     return (
-        <div className="navigationDiv">
-            <Link to={`/`}><img src={Logo} alt="beer" className="beerLogo" /></Link>
-        </div>);
+        <nav>
+            <div className="navigationDiv">
+                <Link to={`/`}><img src={Logo} alt="beer" className="beerLogo" /></Link>
+            </div>
+        </nav>);
 }
 
 export default Navigation;

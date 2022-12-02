@@ -1,0 +1,42 @@
+.beerDetailDiv {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.beerImage {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.beerNameP {
+    font-family: "RobotoSlab-Medium", serif;
+    font-size: 42px;
+    margin: 50px 2rem 0 2rem;
+}
+
+.beerTaglineP {
+    font-family: "RobotoSlab-Bold", serif;
+    color: #FFCA41;
+    margin: 0 2rem;
+}
+
+.beerDetailGray {
+    font-family: "RobotoSlab-Light", serif;
+    color: gray;
+    font-size: 12px;
+    margin: 2rem;
+}
+
+.beerDetailGray1,
+.beerDetailGray2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.beerDetailDescriptionP {
+    font-family: "RobotoSlab-Medium", serif;
+    font-size: 12px;
+    margin: 2rem;
+}

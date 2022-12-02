@@ -1,3 +1,4 @@
+import "./Detail.css"
 import Navigation from "../../components/Navigation";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom"
@@ -26,11 +27,21 @@ const Detail = () => {
             })
     }, []);
 
-    return (<div>
-        <p>{beerList.name}</p>
-
-        <Navigation />
-    </div>);
+    return (
+        <div className="beerDetailDiv">
+            <img src={beerList.image_url} alt={beerList.name} className="beerImage" />
+            <div>
+                <p className="beerNameP">{beerList.name}</p>
+                <p className="beerTaglineP">{beerList.tagline}</p>
+                <div className="beerDetailGray">
+                    <div className="beerDetailGray1"><p>First brewed:</p><p>{beerList.first_brewed}</p></div>
+                    <div className="beerDetailGray2"><p>Attenuation level:</p><p>{beerList.attenuation_level}</p></div>
+                </div>
+                <p className="beerDetailDescriptionP">{beerList.description}</p>
+            </div>
+            <Navigation />
+        </div>
+    );
 }
 
 export default Detail;
