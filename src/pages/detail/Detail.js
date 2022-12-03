@@ -1,7 +1,8 @@
 import "./Detail.css"
 import Navigation from "../../components/Navigation";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom";
+import backArrow from "../../assets/img/Back.svg";
 
 // attenuation_level:75
 // contributed_by:"Sam Mason <samjbmason>"
@@ -30,7 +31,7 @@ const Detail = () => {
     return (
         <div className="beerDetailDiv">
             <img src={beerList.image_url} alt={beerList.name} className="beerImage" />
-            <div>
+            <div className="beerDetailInfoDiv">
                 <p className="beerNameP">{beerList.name}</p>
                 <p className="beerTaglineP">{beerList.tagline}</p>
                 <div className="beerDetailGray">
@@ -38,6 +39,7 @@ const Detail = () => {
                     <div className="beerDetailGray2"><p>Attenuation level:</p><p>{beerList.attenuation_level}</p></div>
                 </div>
                 <p className="beerDetailDescriptionP">{beerList.description}</p>
+                <Link to="/uebersicht"><img src={backArrow} alt="back arrow" className="backArrowIcon" /></Link>
             </div>
             <Navigation />
         </div>

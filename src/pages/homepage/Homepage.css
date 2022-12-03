@@ -26,8 +26,23 @@
     font-family: "RobotoSlab-Bold", serif;
 }
 
+.homepageImgBanner a {
+    text-decoration: none;
+}
+
+.homepageImgBanner a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
 .homepageP {
     padding-top: 10px;
     background-color: white;
     font-family: "RobotoSlab-Light", serif;
+}
+
+@media only screen and (min-width: 768px) {
+    .homepageImgBanner {
+        width: 500px;
+    }
 }

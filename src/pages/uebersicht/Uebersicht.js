@@ -29,11 +29,13 @@ const Uebersicht = () => {
         {beerList.map((beer, index) => {
             return (
                 <div key={index} className="singleBeerDiv">
-                    <img src={beer.image_url} alt={beer.name} />
-                    <div>
-                        <h2>{beer.name}</h2>
-                        <p>{beer.tagline}</p>
-                        <p>Created by: {beer.name}</p>
+                    <div className="singleBeerDivImgContainer">
+                        <img src={beer.image_url} alt={beer.name} />
+                    </div>
+                    <div className="uebersichtSingleBeerInfo">
+                        <h2 className="beerNameP">{beer.name}</h2>
+                        <p className="beerTaglineP">{beer.tagline}</p>
+                        <p className="beerDetailDescriptionP">Created by: {beer.name}</p>
                         <Link to={`/detail/${beer._id}`}><button type="button">Details</button></Link>
                     </div>
                 </div>
