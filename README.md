@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+NOTES FOR TEAM
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+(emilys updates 03.12.22)
 
-## Available Scripts
+- Homepage.css: die 2 Bilder habe ich wieder aus der Figma heruntergeladen, diesmal als png. die Datei sind jetzt nicht mehr riesig und laden ganz ok. 
 
-In the project directory, you can run:
+- Homepage.css: media query ab 768px.
 
-### `npm start`
+- Detail.css: beerImage Höhe in px umgesetzt.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Detail.css: beerDetailInfoDiv, margin gestyled und einzelne Margins gelöscht
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Detail.css: media query ab 768px, Detail.css.
 
-### `npm test`
+- Detail.css: back arrow importiert, gelinkt und gestyled
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Uebersicht.css: singleBeerDiv border-top außer nth-of-type(1)
 
-### `npm run build`
+- Uebersicht.js: neuer className, uebersichtSingleBeerInfo 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Uebersicht.css: uebersichtSingleBeerInfo eine Breite gegeben
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Uebersicht.js: h2 und p className vergeben um die Detail.css styling zu benutzen und weiter im Uebersicht.css angepasst
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Uebersicht.js: neuer className, singleBeerDivImgContainer -- um die Bildgröße einfacher stylen zu können
 
-### `npm run eject`
+- Uebersicht.css: media query, ab 768px eine fixe Breite
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Homepage.css: .homepageImgBanner a tags gestyled
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- RANDOM BEER page erstellt. Da die URL für einen Random Beer genau gleich ist wie die URL wir gefetched haben in Detail.js, habe ich einfach den ganzen detail Ordner in pages kopiert und den Ordner und die Dateien umbenannt. 
+    - In App.js eine neue Route definiert, genau
+    - Dann die URL habe ich angepasst und alles mit Params gelöscht
+    - Die back arrow URL angepasst, um zurück zum Homepage statt zum Uebersicht zu navigieren
+    
+Und zum Schluss, eine Frage: hat jemand eine Idee, warum die RandomDetail Seite lädt zweimal?? 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ <3 Emily
