@@ -29,8 +29,8 @@ NOTES FOR TEAM
 - Homepage.css: .homepageImgBanner a tags gestyled
 
 - RANDOM BEER page erstellt. Da die URL für einen Random Beer genau gleich ist wie die URL wir gefetched haben in Detail.js, habe ich einfach den ganzen detail Ordner in pages kopiert und den Ordner und die Dateien umbenannt. 
-    - In App.js eine neue Route definiert, genau
-    - Dann die URL habe ich angepasst und alles mit Params gelöscht
+    - In App.js eine neue Route definiert
+    - Dann die URL in RandomDetails fetch habe ich angepasst und alles, was mit Params zu tun hat, gelöscht
     - Die back arrow URL angepasst, um zurück zum Homepage statt zum Uebersicht zu navigieren
     
 Und zum Schluss, eine Frage: hat jemand eine Idee, warum die RandomDetail Seite lädt zweimal?? 
